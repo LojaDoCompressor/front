@@ -1,5 +1,5 @@
-import '../scss/app.scss';
-
+// import css
+import '../scss/desktop.scss';
 /* Your JS Code goes here */
 
 /* Demo JS */
