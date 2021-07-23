@@ -15,15 +15,29 @@
       <span class="logoAndSearch">
         <img class="logo" src="images/content/logoLojaDoCompressor.webp" alt="logo da LojaDoCompressor" />
         <span class="search">
-          <input type="text" class="search" placeholder="Buscar" />
-          <button>Lupa</button>
+          <input type="text" class="search" placeholder="Pesquisar produtos..." />
+          <button>
+            <i class="fa fa-search search-icon"></i>
+          </button>
         </span>
       </span>
       <span class="navbarButtons">
-        <button>Phone</button>
-        <button>Wpp</button>
-        <button>Account</button>
-        <button>More</button>
+        <button> <i class="fa fa-phone phone-icon"></i> </button>
+        <button> <i class="fab fa-whatsapp whatsapp-icon"></i> </button>
+        <button> <i class="fa fa-user user-icon"></i> </button>
+
+        <button class="bars-button">
+          <!-- Hack to make dropdown when clicking -->
+          <input type="text" id="openDropdown" hidden=""></input>
+          <label for="openDropdown">
+            <i class="fa fa-bars bars-icon"></i>
+          </label>
+          <div class="dropdown-menu">
+            <span class="facebook"></span>
+            <span class="twitter"></span>
+            <span class="pinterest"></span>
+          </div>
+        </button>
       </span>
     </div>
 
@@ -41,13 +55,29 @@
     </header>
 
     <!-- Sidebar filters -->
-    <div class="content-columns">
-      <div class="filters">
+    <div class="content-inline">
+      <!-- colocar numa aside -->
+      <aside class="filters">
 
-      </div>
-      <div class="products">
-
-      </div>
+      </aside>
+      <main class="products">
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+      </main>
     </div>
 
 

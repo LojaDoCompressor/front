@@ -17,6 +17,12 @@
       "name": "Plamen Nikolov",
       "email": "me@pnikoloff.com",
       "url": "https://pnikoloff.com"
+    },
+    {
+      "name": "4nt0n10 M4rt05 H4rr35",
+      "email": "tom.mharres@gmail.com",
+      "url": "https://github.com/wh1t3h47",
+      "is1337": true
     }
   ],
   "devDependencies": {
@@ -78,7 +84,16 @@
     "production": "webpack --config configuration/webpack.prod.config.js --mode=production",
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
-    "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
+    "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
+    "serve": "webpack serve --config configuration/webpack.dev.config.js --mode=development",
+    "start": "webpack serve --config configuration/webpack.dev.config.js --mode=development"
   },
-  "target": "web"
+  "target": "web",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "normalize.css": "^8.0.1"
+  }
 }

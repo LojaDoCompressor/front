@@ -1,0 +1,249 @@
+@import "./variables.scss";
+@import "./colors.scss";
+
+body {
+    padding-top: $desktop-navbar-height;
+    margin: 0;
+    background-color: $-ghost-white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: $desktop-navbar-height;
+  background-color: $-dark-orange;
+  
+  .navbarButtons {
+      // float: right;
+      padding-left: 28px;
+      padding-right: 20px;
+      flex-shrink: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      // While hovering
+      // Open overlay: "Botão roxo";
+      // Animate: Dissolve;
+
+      &>button {
+          width: auto;
+          height: 35px;
+          top: 24px;
+          height: 35px;
+          padding: 0;
+          background: none;
+          border: none;
+
+          // Desse forma o hover do botão acontece na área toda, e não apenas em cima do ícone
+          &:hover>svg>path,&:hover>label>svg>path {
+              fill: $all-icon-secondary-color;
+              opacity: 1;
+          }
+
+          &:not(:first-of-type) {
+              margin-left: 12px;
+          }
+
+          &:not(:last-of-type) {
+              margin-right: 12px;
+          }
+
+          &.bars-button {
+            .dropdown-menu {
+                transition: all 300ms ease-in-out;
+                transform-origin: top center;
+                opacity: 0;
+
+                &>.facebook,.twitter,.pinterest {
+                  position: absolute;
+                  width: $all-dropdown-width;
+                  height: $all-dropdown-height;
+                  right: 0%;
+                  border: 2px solid rgba(0, 0, 0, 0.5);
+                  background: rgba(0, 0, 0, 0.68);
+                  backdrop-filter: blur(4px);
+                  /* Note: backdrop-filter has minimal browser support */
+                  // transition: all 300ms ease-in-out;
+                  // transform-origin: top center;
+
+        
+                  &:hover {
+                    background: darken(rgba(88, 130, 250, 0.68), 49%);
+                    // backdrop-filter: blur(4px);
+                  }
+                }
+
+                @keyframes translateX {
+                    0% {
+                      opacity: 0;
+                      transform: translateX(+$all-dropdown-width);
+                    }
+                    
+                    // 80% {
+                    //   transform: translateX(65px);
+                    // }
+                  
+                    100% {
+                      opacity: 1;
+                      transform: translateX(-$all-dropdown-width - $all-dropdown-animation-offset);
+                    }
+                  }
+        
+                &>.facebook {
+                    display: none;
+                    top: $desktop-navbar-height;
+                    right: -$all-dropdown-width - $all-dropdown-animation-offset;
+                    animation: translateX 300ms ($all-dropdown-animation-time) ease-in-out forwards;
+                }
+        
+                &>.twitter {
+                    display: none;
+                    top: $desktop-navbar-height + $all-dropdown-height;
+                    right: -$all-dropdown-width - $all-dropdown-animation-offset;
+                    animation: translateX 300ms (2 * $all-dropdown-animation-time) ease-in-out forwards;
+                }
+        
+                &>.pinterest {
+                    display: none;
+                    top: $desktop-navbar-height + $all-dropdown-height * 2;
+                    right: -$all-dropdown-width - $all-dropdown-animation-offset;
+                    animation: translateX 300ms (3 * $all-dropdown-animation-time) ease-in-out forwards;
+                }
+              }
+          }
+
+          &>#openDropdown {
+              display: block;
+              position: absolute;
+              top: 99999px;
+              // width: 50px;
+              // height: 50px;
+              
+              &:focus, &:active {
+                  fill: $all-icon-secondary-color;
+                  background-color: $all-icon-secondary-color;
+
+                  & + label {
+
+                    &>svg>path {
+                        fill: $all-icon-secondary-color;
+                    }
+                    
+                    & + .dropdown-menu {
+                        &>* { 
+                            display: block;
+                        }
+                        opacity: 1;
+                      }
+                  }                  
+              }
+          }
+
+          &>svg,&>label>svg{
+              width: 29px;
+              height: 100%;
+
+              &>path {
+                  fill: $all-icon-main-color;
+                  color: $all-icon-main-color;
+                  opacity: 1;
+                  transition: all ease-in-out 300ms;
+
+                  &:hover {
+                      fill: $all-icon-secondary-color;
+                      color: $all-icon-secondary-color;
+                      opacity: 1;
+                  }
+              }
+          }
+      }
+
+  }
+
+  .logoAndSearch {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+
+    .logo {
+        width: 106px;
+        height: 73px;
+        margin: 10px 12px 0 36px;
+    }
+
+    .search {
+        width: 100%;
+        max-width: $desktop-search-width;
+        height: $desktop-search-height;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        transition: all ease-in-out 300ms;
+
+        &:hover {
+
+            &>input {
+                background-color: transparentize($-languid-lavander, 0.30);
+                // opacity: 70%;
+                box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 0px;
+            }
+
+            &>button>svg>path {
+                fill: $all-icon-secondary-color;
+                opacity: 1;
+            }
+        }
+
+        &>input {
+            width: 100%;
+            max-width: $desktop-search-width;
+            background-color: $orange-salmon;
+            border-radius: 0px;
+            border: none;
+            padding: $all-input-padding-top $all-input-padding-right $all-input-padding-bottom $all-input-padding-left;
+            box-sizing: border-box;
+            outline: none !important;
+
+            &:focus, &:active {
+                background-color: transparentize($-languid-lavander, 0.30);
+                // opacity: 70%;
+                box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 0px;
+                outline: 1px solid darken($-dark-orange, 15%) !important;
+            }
+        }
+        
+        &>button {
+            width: $all-search-button-width;
+            height: $all-search-button-height;
+            margin-left: -52px;
+            padding: 0;
+            background: none;
+            border: none;
+
+            &>svg {
+                width: 100%;
+                height: 100%;
+
+                &>path {
+                  fill: $all-icon-main-color;
+                  color: $all-icon-main-color;
+                  opacity: 1;
+                  transition: all ease-in-out 300ms;
+
+                  &:hover {
+                      fill: $all-icon-secondary-color;
+                      color: $all-icon-secondary-color;
+                      opacity: 1;
+                  }
+                }
+            }
+        }
+    }
+  }
+}
