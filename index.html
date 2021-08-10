@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>LojaDoCompressor Demonstração desktop/ mobile</title>
+    <meta name="description" content="demo heh">
+    <meta name="keywords" content="demo 1337">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wh1t3h47 - tom.mharres@gmail.com">
+  <link rel="icon" href="favicon.ico"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+  <body>
+
+    <!-- top Navbar with span children, it has a logo, a search box and three icons -->
+    <div class="navbar">
+      <span class="logoAndSearch">
+        <img class="logo" src="images/content/logoLojaDoCompressor.webp" alt="logo da LojaDoCompressor" />
+        <span class="search">
+          <input type="search" class="search" placeholder="Pesquisar produtos..." />
+          <button>
+            <i class="fa fa-search search-icon"></i>
+          </button>
+        </span>
+      </span>
+      <span class="navbarButtons">
+        <button> <i class="fa fa-phone phone-icon"></i> </button>
+        <button> <i class="fab fa-whatsapp whatsapp-icon"></i> </button>
+        <button> <i class="fa fa-user user-icon"></i> </button>
+
+        <button class="bars-button">
+          <!-- Hack to make dropdown when clicking -->
+          <input type="text" id="openDropdown" hidden=""></input>
+          <label for="openDropdown">
+            <i class="fa fa-bars bars-icon"></i>
+          </label>
+          <div class="dropdown-menu">
+            <span class="facebook"></span>
+            <span class="twitter"></span>
+            <span class="pinterest"></span>
+          </div>
+        </button>
+      </span>
+    </div>
+
+    <!-- header with a list of links inline -->
+    <header>
+      <span class="links">
+        <a href="#" disabled=""><small>INÍCIO</small></a>
+        <a href="#"><small>COMPRESSORES</small></a>
+        <a href="#"><small>HIDRO LAVADORAS</small></a>
+        <a href="#"><small>SECADORAS</small></a>
+        <a href="#"><small>FERRAMENTAS PNEUMÁTICAS</small></a>
+        <a href="#"><small>FILTROS E ÓLEOS</small></a>
+        <a href="#"><small>PEÇAS ORIGINAIS</small></a>
+      </span>
+    </header>
+
+    <!-- Sidebar filters -->
+    <div class="content-inline">
+      <!-- colocar numa aside -->
+      <aside class="filters">
+
+      </aside>
+      <main class="products">
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+      </main>
+    </div>
+
+
+
+  </body>
+</html>
