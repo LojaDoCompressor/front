@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>LojaDoCompressor Demonstração desktop/ mobile</title>
+    <meta name="description" content="demo heh">
+    <meta name="keywords" content="demo 1337">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wh1t3h47 - tom.mharres@gmail.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- top Navbar with span children, it has a logo, a search box and three icons -->
+    <div class="navbar">
+      <span class="logoAndSearch">
+        <img class="logo" src="images/content/logoLojaDoCompressor.webp" alt="logo da LojaDoCompressor" />
+        <span class="search">
+          <input type="search" class="search" placeholder="Pesquisar produtos..." />
+          <button>
+            <i class="fa fa-search search-icon"></i>
+          </button>
+        </span>
+      </span>
+      <span class="navbarButtons">
+        <button> <i class="fa fa-phone phone-icon"></i> </button>
+        <button> <i class="fab fa-whatsapp whatsapp-icon"></i> </button>
+        <button> <i class="fa fa-user user-icon"></i> </button>
+
+        <button class="bars-button">
+          <!-- Hack to make dropdown when clicking -->
+          <input type="text" id="openDropdown" hidden=""></input>
+          <label for="openDropdown">
+            <i class="fa fa-bars bars-icon"></i>
+          </label>
+          <div class="dropdown-menu">
+            <span class="facebook"></span>
+            <span class="twitter"></span>
+            <span class="pinterest"></span>
+          </div>
+        </button>
+      </span>
+    </div>
+
+    <!-- header with a list of links inline -->
+    <header>
+      <span class="links">
+        <a href="#" disabled=""><small>INÍCIO</small></a>
+        <a href="#"><small>COMPRESSORES</small></a>
+        <a href="#"><small>HIDRO LAVADORAS</small></a>
+        <a href="#"><small>SECADORAS</small></a>
+        <a href="#"><small>FERRAMENTAS PNEUMÁTICAS</small></a>
+        <a href="#"><small>FILTROS E ÓLEOS</small></a>
+        <a href="#"><small>PEÇAS ORIGINAIS</small></a>
+      </span>
+    </header>
+
+    <!-- Sidebar filters -->
+    <div class="content-inline">
+      <!-- colocar numa aside -->
+      <aside class="filters">
+        <h1>dsddd</h1>
+      </aside>
+      <main class="products">
+        <div class="product-card">
+          
+          <div id="testeimg" class="produto1">
+            <img src="images/content/produto1.png" alt=""> 
+          </div>
+          
+         <div class="text-produtos">
+           <h2>Compressor Odontológico PB200/35
+          </h2>
+          
+          <span class="price product-price">
+            <span class="price product-price-vista" style="margin-right: 3px">R$</span>181<span class="price-cent">,76</span>
+        </span>
+          
+        
+        
+        <span class="price-card-cred">  <i class="fa fa-credit-card" style="margin-top:4px "></i> 5x
+            R$ 40,39 no cartão</span>
+         </div>
+        
+         <a href="">
+          <div id="carrinho" class="button">
+            Teste
+ 
+          </div>
+         </a>
+
+
+        </div>
+        
+        
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+        <div class="product-card">
+        </div>
+      </main>
+    </div>
+
+
+
+  </body>
+</html>
+

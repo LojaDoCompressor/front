@@ -1,0 +1,28 @@
+$-pollished-pine:                   #7E998A; // cor de esgoto
+$-blue-crayola:                     #5882FA; // azul principal
+$-independence:                     #464655; // sombra
+$-ghost-white:                      #FBFBFF; // branco
+$-isabelline:                       #F5EFED; // branco cinza
+$-cinnabar:                         #D64933; // vermelho suave
+$-international-orange-engineering: #BA1200; // vermelho disabled
+$-red-ryb:                          #FF312E; // vermelho alerta
+$-laser-lemmon:                     #FCFC62; // marca texto
+$-yellow-ryb:                       #F2FF49; // marca texto disabled
+$-shamrock-green:                   #329F5B; // verde escuro
+$-yellow-green:                     #9FD356; // verde claro
+$-persian-orange:                   #E08E45; // laranja disabled
+$-dark-orange:                      #FB8B24; // laranja
+$-languid-lavander:                 #D2C3D5; // roxo claro
+$-preto-fraco: #333;
+$-cinza-claro:#606060;
+$-preto:#000;
+
+$orange-salmon: rgba(245, 239, 237, 0.5);
+$desktop-active-links-color: #000;
+$all-icon-main-color: #000;
+$all-icon-secondary-color: darken(rgba(88, 130, 250, 0.8), 20%);
+$all-link-color: $-blue-crayola;
+$all-link-visited-color: darken($-blue-crayola, 5%);
+$all-link-hover-color: lighten($color: $-blue-crayola, $amount: 10%);
+// tem q ser assim se n buga a extensão de cores do code
+$desktop-filters-background-color: #F5EFED; // isabelline
