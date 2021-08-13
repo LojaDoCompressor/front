@@ -9,9 +9,25 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
+import Glide from '@glidejs/glide';
+
 /* Demo JS */
 import './demo.js';
 import 'normalize.css';
+
+const config = {
+  type: 'slider',
+  startAt: 0,
+  perView: 1,
+  breakpoints: {
+    800: {
+      perView: 2,
+    },
+  },
+
+};
+
+new Glide('.glide', config).mount();
 
 library.add(fas, far, fab);
 

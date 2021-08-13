@@ -1,5 +1,8 @@
 @import "./variables.scss";
 @import "./colors.scss";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 
 body {
     padding-top: $desktop-navbar-height;
@@ -247,3 +250,6 @@ body {
     }
   }
 }
+ #slide img{
+     margin-left: -171px;
+ }
