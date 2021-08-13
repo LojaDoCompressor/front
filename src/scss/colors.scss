@@ -1,21 +1,21 @@
-$-pollished-pine:                   #7E998A; // cor de esgoto
-$-blue-crayola:                     #5882FA; // azul principal
-$-independence:                     #464655; // sombra
-$-ghost-white:                      #FBFBFF; // branco
-$-isabelline:                       #F5EFED; // branco cinza
-$-cinnabar:                         #D64933; // vermelho suave
-$-international-orange-engineering: #BA1200; // vermelho disabled
-$-red-ryb:                          #FF312E; // vermelho alerta
-$-laser-lemmon:                     #FCFC62; // marca texto
-$-yellow-ryb:                       #F2FF49; // marca texto disabled
-$-shamrock-green:                   #329F5B; // verde escuro
-$-yellow-green:                     #9FD356; // verde claro
-$-persian-orange:                   #E08E45; // laranja disabled
-$-dark-orange:                      #FB8B24; // laranja
-$-languid-lavander:                 #D2C3D5; // roxo claro
+$-pollished-pine: #7e998a; // cor de esgoto
+$-blue-crayola: #5882fa; // azul principal
+$-independence: #464655; // sombra
+$-ghost-white: #fbfbff; // branco
+$-isabelline: #f5efed; // branco cinza
+$-cinnabar: #d64933; // vermelho suave
+$-international-orange-engineering: #ba1200; // vermelho disabled
+$-red-ryb: #ff312e; // vermelho alerta
+$-laser-lemmon: #fcfc62; // marca texto
+$-yellow-ryb: #f2ff49; // marca texto disabled
+$-shamrock-green: #329f5b; // verde escuro
+$-yellow-green: #9fd356; // verde claro
+$-persian-orange: #e08e45; // laranja disabled
+$-dark-orange: #fb8b24; // laranja
+$-languid-lavander: #d2c3d5; // roxo claro
 $-preto-fraco: #333;
-$-cinza-claro:#606060;
-$-preto:#000;
+$-cinza-claro: #606060;
+$-preto: #000;
 
 $orange-salmon: rgba(245, 239, 237, 0.5);
 $desktop-active-links-color: #000;
@@ -25,4 +25,4 @@ $all-link-color: $-blue-crayola;
 $all-link-visited-color: darken($-blue-crayola, 5%);
 $all-link-hover-color: lighten($color: $-blue-crayola, $amount: 10%);
 // tem q ser assim se n buga a extensão de cores do code
-$desktop-filters-background-color: #F5EFED; // isabelline
+$desktop-filters-background-color: #f5efed; // isabelline

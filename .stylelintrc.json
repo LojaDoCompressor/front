@@ -1,0 +1,15 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "no-descending-specificity": null,
+    "selector-max-compound-selectors": null,
+    "max-nesting-depth": 10,
+    "selector-max-id": 10,
+    "scss/at-import-partial-extension-blacklist": null,
+    "scss/selector-no-redundant-nesting-selector": null,
+    "declaration-property-value-disallowed-list": null,
+    "scss/dollar-variable-pattern": null,
+    "selector-no-qualifying-type": null,
+    "selector-class-pattern": null
+  }
+}
