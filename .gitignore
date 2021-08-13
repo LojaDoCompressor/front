@@ -22,3 +22,5 @@ node_modules/
 dist/
 
 .dccache
+
+yarn-error.log
