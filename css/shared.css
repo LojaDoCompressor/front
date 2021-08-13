@@ -1,49 +1,209 @@
 /*!*****************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/desktop-topbar.scss ***!
   \*****************************************************************************************************************************************************************/
+.glide {
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.glide * {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+.glide__track {
+  overflow: hidden;
+}
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -ms-touch-action: pan-Y;
+      touch-action: pan-Y;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  will-change: transform;
+}
+.glide__slides--dragging {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  white-space: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.glide__slide a {
+  -webkit-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.glide__arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.glide__bullets {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.glide--rtl {
+  direction: rtl;
+}
+
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  color: white;
+  text-transform: uppercase;
+  padding: 9px 12px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition: opacity 150ms ease, border 300ms ease-in-out;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  line-height: 1;
+}
+.glide__arrow:focus {
+  outline: none;
+}
+.glide__arrow:hover {
+  border-color: white;
+}
+.glide__arrow--left {
+  left: 2em;
+}
+.glide__arrow--right {
+  right: 2em;
+}
+.glide__arrow--disabled {
+  opacity: 0.33;
+}
+.glide__bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 2em;
+  left: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.glide__bullet {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0.25em;
+}
+.glide__bullet:focus {
+  outline: none;
+}
+.glide__bullet:hover, .glide__bullet:focus {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.glide__bullet--active {
+  background-color: white;
+}
+.glide--swipeable {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+.glide--dragging {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
 body {
-  padding-top: 83px;
+  background-color: #fbfbff;
   margin: 0;
-  background-color: #FBFBFF;
+  padding-top: 83px;
 }
 
 .navbar {
-  position: fixed;
-  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fb8b24;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 83px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar .navbarButtons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 83px;
-  background-color: #FB8B24;
-}
-.navbar .navbarButtons {
-  padding-left: 28px;
-  padding-right: 20px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100%;
+  padding-left: 28px;
+  padding-right: 20px;
 }
 .navbar .navbarButtons > button {
-  width: auto;
-  height: 35px;
-  top: 24px;
-  height: 35px;
-  padding: 0;
   background: none;
   border: none;
+  height: 35px;
+  height: 35px;
+  padding: 0;
+  top: 24px;
+  width: auto;
 }
 .navbar .navbarButtons > button:hover > svg > path, .navbar .navbarButtons > button:hover > label > svg > path {
   fill: rgba(7, 64, 229, 0.8);
@@ -56,24 +216,28 @@ body {
   margin-right: 12px;
 }
 .navbar .navbarButtons > button.bars-button .dropdown-menu {
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  opacity: 0;
   -webkit-transform-origin: top center;
           transform-origin: top center;
-  opacity: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-.navbar .navbarButtons > button.bars-button .dropdown-menu > .facebook, .navbar .navbarButtons > button.bars-button .dropdown-menu .twitter, .navbar .navbarButtons > button.bars-button .dropdown-menu .pinterest {
-  position: absolute;
-  width: 273px;
-  height: 49px;
-  right: 0%;
-  border: 2px solid rgba(0, 0, 0, 0.5);
-  background: rgba(0, 0, 0, 0.68);
+.navbar .navbarButtons > button.bars-button .dropdown-menu > .facebook,
+.navbar .navbarButtons > button.bars-button .dropdown-menu .twitter,
+.navbar .navbarButtons > button.bars-button .dropdown-menu .pinterest {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.68);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  height: 49px;
+  position: absolute;
+  right: 0%;
+  width: 273px;
   /* Note: backdrop-filter has minimal browser support */
 }
-.navbar .navbarButtons > button.bars-button .dropdown-menu > .facebook:hover, .navbar .navbarButtons > button.bars-button .dropdown-menu .twitter:hover, .navbar .navbarButtons > button.bars-button .dropdown-menu .pinterest:hover {
+.navbar .navbarButtons > button.bars-button .dropdown-menu > .facebook:hover,
+.navbar .navbarButtons > button.bars-button .dropdown-menu .twitter:hover,
+.navbar .navbarButtons > button.bars-button .dropdown-menu .pinterest:hover {
   background: rgba(3, 24, 86, 0.68);
 }
 @-webkit-keyframes translateX {
@@ -101,25 +265,25 @@ body {
   }
 }
 .navbar .navbarButtons > button.bars-button .dropdown-menu > .facebook {
-  display: none;
-  top: 83px;
-  right: -278px;
   -webkit-animation: translateX 300ms 75ms ease-in-out forwards;
           animation: translateX 300ms 75ms ease-in-out forwards;
+  display: none;
+  right: -278px;
+  top: 83px;
 }
 .navbar .navbarButtons > button.bars-button .dropdown-menu > .twitter {
-  display: none;
-  top: 132px;
-  right: -278px;
   -webkit-animation: translateX 300ms 150ms ease-in-out forwards;
           animation: translateX 300ms 150ms ease-in-out forwards;
+  display: none;
+  right: -278px;
+  top: 132px;
 }
 .navbar .navbarButtons > button.bars-button .dropdown-menu > .pinterest {
-  display: none;
-  top: 181px;
-  right: -278px;
   -webkit-animation: translateX 300ms 225ms ease-in-out forwards;
           animation: translateX 300ms 225ms ease-in-out forwards;
+  display: none;
+  right: -278px;
+  top: 181px;
 }
 .navbar .navbarButtons > button > #openDropdown {
   display: block;
@@ -127,8 +291,8 @@ body {
   top: 99999px;
 }
 .navbar .navbarButtons > button > #openDropdown:focus, .navbar .navbarButtons > button > #openDropdown:active {
-  fill: rgba(7, 64, 229, 0.8);
   background-color: rgba(7, 64, 229, 0.8);
+  fill: rgba(7, 64, 229, 0.8);
 }
 .navbar .navbarButtons > button > #openDropdown:focus + label > svg > path, .navbar .navbarButtons > button > #openDropdown:active + label > svg > path {
   fill: rgba(7, 64, 229, 0.8);
@@ -140,198 +304,109 @@ body {
   display: block;
 }
 .navbar .navbarButtons > button > svg, .navbar .navbarButtons > button > label > svg {
-  width: 29px;
   height: 100%;
+  width: 29px;
 }
 .navbar .navbarButtons > button > svg > path, .navbar .navbarButtons > button > label > svg > path {
-  fill: #000;
   color: #000;
+  fill: #000;
   opacity: 1;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
 }
 .navbar .navbarButtons > button > svg > path:hover, .navbar .navbarButtons > button > label > svg > path:hover {
-  fill: rgba(7, 64, 229, 0.8);
   color: rgba(7, 64, 229, 0.8);
+  fill: rgba(7, 64, 229, 0.8);
   opacity: 1;
 }
 .navbar .logoAndSearch {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 .navbar .logoAndSearch .logo {
-  width: 106px;
   height: 73px;
   margin: 10px 12px 0 36px;
+  width: 106px;
 }
 .navbar .logoAndSearch .search {
-  width: 100%;
-  max-width: 613px;
-  height: 49px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  height: 49px;
+  max-width: 613px;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
+  width: 100%;
 }
 .navbar .logoAndSearch .search:hover > input {
   background-color: rgba(210, 195, 213, 0.7);
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 0px;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .navbar .logoAndSearch .search:hover > button > svg > path {
   fill: rgba(7, 64, 229, 0.8);
   opacity: 1;
 }
 .navbar .logoAndSearch .search > input {
-  width: 100%;
-  max-width: 613px;
   background-color: rgba(245, 239, 237, 0.5);
-  border-radius: 0px;
   border: none;
-  padding: 0 0 0 15px;
+  border-radius: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 613px;
   outline: none !important;
+  padding: 0 55px 0 15px;
+  width: 100%;
 }
 .navbar .logoAndSearch .search > input:focus, .navbar .logoAndSearch .search > input:active {
   background-color: rgba(210, 195, 213, 0.7);
-  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 0px;
+  border-radius: 0;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), inset 0 4px 4px rgba(0, 0, 0, 0.25);
   outline: 1px solid #cf6504 !important;
 }
 .navbar .logoAndSearch .search > button {
-  width: 35px;
+  background: none;
+  border: none;
   height: 35px;
   margin-left: -52px;
   padding: 0;
-  background: none;
-  border: none;
+  width: 35px;
 }
 .navbar .logoAndSearch .search > button > svg {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 .navbar .logoAndSearch .search > button > svg > path {
-  fill: #000;
   color: #000;
+  fill: #000;
   opacity: 1;
   -webkit-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
 }
 .navbar .logoAndSearch .search > button > svg > path:hover {
-  fill: rgba(7, 64, 229, 0.8);
   color: rgba(7, 64, 229, 0.8);
+  fill: rgba(7, 64, 229, 0.8);
   opacity: 1;
 }
-/*!******************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/desktop-content.scss ***!
-  \******************************************************************************************************************************************************************/
-.links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 2% 1% 2% 1%;
-  margin: 0 auto 0 auto;
-  min-width: 800px;
-  text-align: center;
-  max-width: 1300px;
-}
-.links > a {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  color: #5882FA;
-  text-decoration: none;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
-}
-.links > a[disabled] {
-  color: #000 !important;
-  font-weight: bold;
-  cursor: default;
-}
-.links > a:visited {
-  color: #3f6ff9;
-}
-.links > a:hover {
-  color: #8aa7fb;
-}
 
-.content-inline {
-  color: red;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.content-inline > .filters {
-  background-color: #F5EFED;
-  width: 400px;
-  height: auto;
-}
-.content-inline > .products {
-  background-color: #F5EFED;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  width: 1000px;
-  padding: 15px;
-  display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(454px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(454px, 1fr));
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  row-gap: 20px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-}
-.content-inline > .products > .product-card {
-  width: 300px;
-  height: 454px;
-  background-color: #FBFBFF;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.content-inline > .products > .product-card:hover {
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(70, 70, 85, 0.15);
-          box-shadow: 0px 0px 10px 2px rgba(70, 70, 85, 0.15);
+/** @todo criar um arquivo para o products.scss, importar no products.js */
+#slide img {
+  margin-left: -171px;
 }
 /*!*****************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/normalize.css/normalize.css ***!
