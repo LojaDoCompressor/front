@@ -4,7 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-
+/**
+ * @todo Criar um arquivo específico topLinks.css, mover esses links
+ * para esse arquivo e remover essa linha. Além disso, importar esse
+ * arquivo no arquivo shared.js
+ */
 .links {
   display: flex;
   justify-content: space-between;
@@ -79,6 +83,87 @@
       &:hover {
         box-shadow: 0 0 10px 2px rgba(70, 70, 85, 0.15);
       }
+
     }
   }
+}
+
+.produto1 {
+  display: flex;
+  justify-content: center;
+
+}
+
+.product-card img {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  width: 180px;
+}
+
+.text-produtos h2 {
+  align-items: center;
+  color: $-preto-fraco;
+  display: flex;
+  font-family: 'Open Sans ', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.product-price-vista {
+  color: #606060;
+  display: inline-block;
+  font-size: 11px;
+  margin: 18px -4px 0 1px;
+}
+
+
+span.price.product-price {
+  align-items: center;
+  color: $-dark-orange;
+  display: flex;
+  // margin-left: 63px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  justify-content: center;
+}
+
+.price-card-cred {
+  /** @todo variável colors.scss */
+  color: #606060;
+  display: flex;
+  /* margin: 1px 0 0 63px; */
+  /** @todo variables.scss */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  justify-content: center;
+  line-height: 19px;
+  margin-top: 3px;
+}
+
+
+.button {
+  background-color: $-preto; /* Green */
+  border-radius: 24px;
+  color: $-dark-orange;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 29px;
+  margin-top: 6px;
+  padding: 10px 104px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#testeimg img:hover {
+    /**
+     * @todo remover id, colocar uma classe products-card-image e aninhar
+     * a propriedade SCSS dentro do hover do products-card, de forma que
+     * ao fazer hover em qqr lugar do card, você aumente a imagem, pois
+     * vamos criar uma funcionalidade diferente de zoom na imagem com
+     * um cursorzinho de lupa e um zoom mais detalhado (+/- 2.5 vezes)
+     */
+  transform: scale(1.1);
+  transform: scale(1.1);
 }

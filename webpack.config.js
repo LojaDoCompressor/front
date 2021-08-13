@@ -12,22 +12,62 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { extendDefaultPlugins } = require('svgo');
 
 const environment = require('./configuration/environment');
+require('./html5Lint');
 
-const templateFiles = fs.readdirSync(environment.paths.source)
+/** @type {Array<string>} */
+const allFilesArray = fs.readdirSync(environment.paths.source);
+const templateFiles = allFilesArray
   .filter((file) => path.extname(file).toLowerCase() === '.html');
 
-const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
-  inject: true,
-  hash: false,
-  filename: template,
-  template: path.resolve(environment.paths.source, template),
-  favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
-}));
+// Remove .html do final de cada elemento da array
+const templateJsChunks = templateFiles
+  .map((file) => (
+    file.toLowerCase() !== 'shared.html') && file.replace(/\.html$/i, ''))
+  /* remove undefined da array */
+  .filter((file) => file);
+// console.log(templateJsChunks);
+
+// JS compartilhado entre todos os arquivos HTML
+const shared = path.resolve(environment.paths.source, 'js', 'shared.js');
+
+const htmlPluginEntries = templateFiles.map((template, index) => (/*
+  console.log(path.resolve(environment.paths.source, template))
+  || */ new HTMLWebpackPlugin({
+    // Injeta o JS na head no HTML
+    inject: 'head',
+    // Para cada HTML, há um ponto de entrada JS equivalente
+    chunks: [
+      template.toLowerCase() !== 'shared.html' && templateJsChunks[index],
+      // chunk JS compartilhado entre todos os HTMLs
+      'shared',
+    ],
+    hash: false,
+    filename: template,
+    template: path.resolve(environment.paths.source, template),
+    favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
+    minify: {
+      removeComments: true,
+      collapseWhitespace: true,
+      removeRedundantAttributes: true,
+      removeEmptyAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      keepClosingSlash: true,
+      minifyJS: true,
+      minifyCSS: true,
+      minifyURLs: true,
+    },
+  })));
+
+/** @type {Record<string, string>} */
+const entry = {
+  shared,
+};
+templateJsChunks.forEach((chunk) => {
+  entry[chunk] = path.resolve(environment.paths.source, 'js', `${chunk}.js`);
+});
 
 module.exports = {
-  entry: {
-    app: path.resolve(environment.paths.source, 'js', 'app.js'),
-  },
+  entry,
   output: {
     filename: 'js/[name].js',
     path: environment.paths.output,

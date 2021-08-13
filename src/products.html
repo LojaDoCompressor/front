@@ -2,19 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>LojaDoCompressor Demonstração desktop/ mobile</title>
     <meta name="description" content="demo heh">
     <meta name="keywords" content="demo 1337">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="wh1t3h47 - tom.mharres@gmail.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="preload" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <style>
+      /** @todo Coloque um spinner aqui, veja: https://github.com/wh1t3h47/teste-desenvolvimento-web/blob/main/packages/frontend/src/index.html */
+      /** Procure o SVG de um ícone de refresh do fontawesome, esse svg
+       * precisa ser uma tag <svg>, não pode ser um <i>, pois precisamos que
+       * ele carregue antes de qualquer CSS, aí você vai importar um CSS
+       * que esconde o spinner no shared.js, utilizando import('arquivo.scss');
+       * para que o import seja feito depois de tudo carregar
+       * adicione esse spinner no index.html tbm
+       */
+    </style>
 
   </head>
   <body>
-    
 
     <!-- top Navbar with span children, it has a logo, a search box and three icons -->
     <div class="navbar">
@@ -58,37 +66,13 @@
         <a href="#"><small>FILTROS E ÓLEOS</small></a>
         <a href="#"><small>PEÇAS ORIGINAIS</small></a>
       </span>
-     
+    </header>
 
-
-          </header>
-          <div id="slide" class="glide">
-            <div data-glide-el="track" class="glide__track">
-              <ul class="glide__slides">
-                <li class="glide__slide"><img src="./images/content/maquina1.png" alt=""></li>
-                <li class="glide__slide"><img src="./images/content/maquina1.png" alt=""></li>
-                <li class="glide__slide"><img src="./images/content/maquina1.png" alt=""></li>
-      
-              </ul>
-            </div>
-            <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-              </div>
-      
-            
-          </div>
-      
-        </div>
     <!-- Sidebar filters -->
     <div class="content-inline">
-        
-
-
-      
       <!-- colocar numa aside -->
       <aside class="filters">
-
+        <h1>dsddd</h1>
       </aside>
       <main class="products">
         <div class="product-card">
@@ -136,12 +120,8 @@
         </div>
         <div class="product-card">
         </div>
-
-
-
-        
       </main>
-     
+    </div>
 
 
 
