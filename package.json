@@ -34,6 +34,7 @@
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^9.0.1",
+    "core-js": "^3.16.1",
     "css-loader": "^5.2.6",
     "css-minimizer-webpack-plugin": "^3.0.2",
     "eslint": "^7.30.0",
@@ -92,7 +93,7 @@
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
     "serve": "webpack serve --config configuration/webpack.dev.config.js --mode=development",
     "start": "webpack serve --config configuration/webpack.dev.config.js --mode=development",
-    "predeploy": "yarn build",
+    "predeploy": "yarn production",
     "deploy": "gh-pages -d dist"
   },
   "target": "web",
