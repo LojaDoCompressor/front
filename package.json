@@ -51,6 +51,7 @@
     "imagemin-jpegtran": "^7.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
+    "jpegtran-bin": "^5.0.2",
     "mini-css-extract-plugin": "^2.1.0",
     "postcss": "^8.3.5",
     "postcss-loader": "^6.1.1",
