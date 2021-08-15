@@ -48,7 +48,7 @@
   width: 100%;
 
   &>.filters {
-    background-color: $desktop-filters-background-color;
+    background-color: $-ghost-white;
     height: auto;
     width: $desktop-filters-width;
   }
@@ -144,9 +144,9 @@ span.price.product-price {
 
 
 .button {
-  background-color: $-preto; /* Green */
+  background-color: $-persian-orange;/* Green */
   border-radius: 24px;
-  color: $-dark-orange;
+  color: $-preto;
   display: inline-block;
   font-size: 16px;
   margin-left: 29px;
@@ -167,3 +167,4 @@ span.price.product-price {
   transform: scale(1.1);
   transform: scale(1.1);
 }
+

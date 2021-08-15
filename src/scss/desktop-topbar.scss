@@ -259,3 +259,110 @@ body {
 #slide img {
   margin-left: -171px;
 }
+
+
+  .botaofiltro{
+    display: flex; 
+     justify-content: space-between; 
+     width: 100%; 
+     padding: 0; 
+     font-family: inherit; 
+     font-size: 16px; 
+     line-height: 28px; 
+     color: inherit; 
+     cursor: pointer; 
+     background: none; 
+     border: 0; 
+     outline: 0;
+     font-family: 'Open Sans ', sans-serif;
+     font-size: 16px;
+     font-weight: 500;
+  }
+  
+#filtro input{
+  position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+label{
+  font-family: 'Open Sans';
+  display: block;
+  font-size: 14px;
+  line-height: 1.7;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#filtro ul{
+  padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.titulofiltro{
+  font-family: 'Open Sans';
+    flex: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.bordafiltro{
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+#filtro{
+  display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+.textofiltro{
+  // margin-top: 15px;
+}
+
+.limparfiltros{
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    color: inherit;
+    cursor: pointer;
+}
+
+.form-control{
+  // padding: 8px 12px;
+  padding: 12px 45px;
+  color: #333333;
+  // background-color: #eeeeee;
+  // border: 1px solid #dddddd;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.form-control:focus,
+.select:hover{
+  outline: none;
+  border: 1px solid #bbbbbb;
+}
+
+.cartaovezes{
+  margin-left: 3px;
+}

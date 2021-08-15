@@ -72,13 +72,90 @@
     <div class="content-inline">
       <!-- colocar numa aside -->
       <aside class="filters">
-        <h1>dsddd</h1>
+        <section style="margin-top: 20px;" id="filtro">
+          <span class="">
+           
+            <h2 class="titulofiltro">Filtrar por</h2>
+            <div class="bordafiltro"></div>
+            <ul>
+              <li style="padding: 20px 0;"> 
+                <button class="botaofiltro">
+                  <span>Coleção</span>
+                  <span><svg viewBox="0 0 16 16" fill="currentColor" width="16" height="16"><path fill="currentColor" d="M12.159 7.2h-8.319c-0.442 0-0.48 0.358-0.48 0.8s0.038 0.8 0.48 0.8h8.319c0.442 0 0.481-0.358 0.481-0.8s-0.038-0.8-0.481-0.8z"></path></svg></span>
+                </button>
+              </li>
+
+              <div class="textofiltro">
+                <ul>
+                  <li>
+                    <label for="">
+                      <input type="radio">
+                      Todas
+                    </label>
+                  </li>
+                  
+                  <li>
+                    <label for="">
+                      <input type="radio">
+                      Compressor Odontológico PB 240
+                    </label>
+                  </li>
+                  
+                  <li>
+                    <label for="">
+                      <input type="radio">
+                      Atlas copco
+                    </label>
+                  </li>
+                  
+                  <li>
+                    <label for="">
+                      <input type="radio">
+                      Motomil CMO-8/50BR ODONTOLÓGICO
+                    </label>
+                  </li>
+                  
+                </ul>
+              </div>
+              <li>
+                <div class="bordafiltro"></div>
+                <button style="margin-top: 14px;" class="botaofiltro">
+
+                    <span>Preço</span>
+                    <span><svg viewBox="0 0 16 16" fill="currentColor" width="16" height="16"><path fill="currentColor" d="M12.159 7.2h-8.319c-0.442 0-0.48 0.358-0.48 0.8s0.038 0.8 0.48 0.8h8.319c0.442 0 0.481-0.358 0.481-0.8s-0.038-0.8-0.481-0.8z"></path></svg></span>
+
+                
+                </button>
+                <div>
+                  <input class="ok" type="number" min="1" max="10">
+                  <span>11</span>
+                  <span>121</span>
+                </div>
+                <div class="bordafiltro"></div>
+                <div>
+                  <!-- <button style="margin-top: 12px;" class="limparfitros botaofiltro">
+                    Limpar filtros
+                   
+                  </button> -->
+                  <select class="form-control" id="nivel">
+                    <option value="Selecionar por">Selecionar por</option>
+                    <option value="normal">Normal</option>
+                    <option value="dificil">Difícil</option>
+                    <option value="chucknorris">Chuck Norris</option>
+                  </select>
+
+                  
+                </div>
+              </li>
+            </ul>
+          </span>
+        </section>
       </aside>
       <main class="products">
         <div class="product-card">
           
           <div id="testeimg" class="produto1">
-            <img src="images/content/produto1.png.jpeg" alt=""> 
+            <img src="images/content/produto1.png" alt=""> 
           </div>
           
          <div class="text-produtos">
@@ -91,8 +168,10 @@
           
         
         
-        <span class="price-card-cred">  <i class="fa fa-credit-card" style="margin-top:4px "></i> 5x
-            R$ 40,39 no cartão</span>
+        <span class="price-card-cred">  
+          <i class="fa fa-credit-card" style="margin-top:4px ">
+          </i> 
+        <span class="cartaovezes">5x R$ 40,39 no cartão</span></span>
          </div>
         
          <a href="">
