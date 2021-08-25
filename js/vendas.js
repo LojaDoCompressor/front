@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector("#btn").addEventListener("click",(function(){var e=document.querySelector("#info-caract-id");"none"===e.style.display?e.style.display="block":e.style.display="none"}))})();
