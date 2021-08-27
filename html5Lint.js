@@ -13,7 +13,7 @@ files.forEach((file) => {
     if (err) throw err;
 
     html5Lint(html, function(_err, results) {
-      results.messages.forEach(function(msg) {
+      (results || {messages: []}).messages.forEach(function(msg) {
         const { type } = msg; // error or warning
         const { message } = msg;
 
