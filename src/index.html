@@ -1,183 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <meta name="description" content="demo heh">
-    <meta name="keywords" content="demo 1337">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="wh1t3h47 - tom.mharres@gmail.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="preload" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <meta name="description" content="demo heh">
+  <meta name="keywords" content="demo 1337">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="wh1t3h47 - tom.mharres@gmail.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
 
 
-  <body>  
-    <!-- top Navbar with span children, it has a logo, a search box and three icons -->
-    <div class="navbar">
+<body>
+  <!-- top Navbar with span children, it has a logo, a search box and three icons -->
+  <div class="navbar">
 
-      <span class="logoAndSearch">
-        <img class="logo" src="images/content/logoLojaDoCompressor.webp" alt="logo da LojaDoCompressor" />
-        <span class="search">
-          <input type="search" class="search" placeholder="Pesquisar produtos..." />
-          <button>
-            <i class="fa fa-search search-icon"></i>
-          </button>
-        </span>
-      </span>
-
-      <span class="navbarButtons">
-        <button> <i class="fa fa-phone phone-icon"></i> </button>
-        <button> <i class="fab fa-whatsapp whatsapp-icon"></i> </button>
-        <button> <i class="fa fa-user user-icon"></i> </button>
-
-        <button class="bars-button">
-          <!-- Hack to make dropdown when clicking -->
-          <input type="text" id="openDropdown" hidden=""></input>
-          <label for="openDropdown">
-            <i class="fa fa-bars bars-icon"></i>
-          </label>
-          <div class="dropdown-menu">
-            <span class="facebook"></span>
-            <span class="twitter"></span>
-            <span class="pinterest"></span>
-          </div>
+    <span class="logoAndSearch">
+      <img class="logo" src="images/content/logoLojaDoCompressor.webp" alt="logo da LojaDoCompressor" />
+      <span class="search">
+        <input type="search" class="search" placeholder="Pesquisar produtos..." />
+        <button>
+          <i class="fa fa-search search-icon"></i>
         </button>
-
       </span>
+    </span>
+
+    <span class="navbarButtons">
+      <button> <i class="fa fa-phone phone-icon"></i> </button>
+      <button> <i class="fab fa-whatsapp whatsapp-icon"></i> </button>
+      <button> <i class="fa fa-user user-icon"></i> </button>
+
+      <button class="bars-button">
+        <!-- Hack to make dropdown when clicking -->
+        <input type="text" id="openDropdown" hidden=""></input>
+        <label for="openDropdown">
+          <i class="fa fa-bars bars-icon"></i>
+        </label>
+        <div class="dropdown-menu">
+          <span class="facebook"></span>
+          <span class="twitter"></span>
+          <span class="pinterest"></span>
+        </div>
+      </button>
+
+    </span>
+  </div>
+
+  <!-- header with a list of links inline -->
+  <header>
+    <span class="links">
+      <a href="#" disabled=""><small>INÍCIO</small></a>
+      <a href="#"><small>COMPRESSORES</small></a>
+      <a href="#"><small>HIDRO LAVADORAS</small></a>
+      <a href="#"><small>SECADORAS</small></a>
+      <a href="#"><small>FERRAMENTAS PNEUMÁTICAS</small></a>
+      <a href="#"><small>FILTROS E ÓLEOS</small></a>
+      <a href="#"><small>PEÇAS ORIGINAIS</small></a>
+    </span>
+
+
+
+  </header>
+  <div id="slide" class="glide">
+    <div data-glide-el="track" class="glide__track">
+      <ul class="glide__slides">
+        <li class="glide__slide"><img src="./images/content/maquina1.png.jpeg" alt=""></li>
+        <li class="glide__slide"><img src="./images/content/maquina1.png.jpeg" alt=""></li>
+        <li class="glide__slide"><img src="./images/content/maquina1.png.jpeg" alt=""></li>
+
+      </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+      <script> /** @todo Utilizar ícones do font-awesome e remover essa tag de script */</script>
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+        <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
 
-    <!-- header with a list of links inline -->
-    <header>
-      <span class="links">
-        <a href="#" disabled=""><small>INÍCIO</small></a>
-        <a href="#"><small>COMPRESSORES</small></a>
-        <a href="#"><small>HIDRO LAVADORAS</small></a>
-        <a href="#"><small>SECADORAS</small></a>
-        <a href="#"><small>FERRAMENTAS PNEUMÁTICAS</small></a>
-        <a href="#"><small>FILTROS E ÓLEOS</small></a>
-        <a href="#"><small>PEÇAS ORIGINAIS</small></a>
-      </span>
-     
+
+  </div>
+
+  </div>
+  <!-- Sidebar filters -->
+  <div class="content-inline">
 
 
-          </header>
-          <div id="slide" class="glide">
-            <div data-glide-el="track" class="glide__track">
-              <ul class="glide__slides">
-                <li class="glide__slide"><img src="./images/content/maquina1.png.jpeg" alt=""></li>
-                <li class="glide__slide"><img src="./images/content/maquina1.png.jpeg" alt=""></li>
-                <li class="glide__slide"><img src="./images/content/maquina1.png.jpeg" alt=""></li>
-      
-              </ul>
+
+
+    <!-- colocar numa aside -->
+    <aside class="filters">
+
+    </aside>
+
+
+  </div>
+
+  <section id="servicos" class="block">
+    <div class="container">
+      <h1 class="title text-center" style="margin: 100px;"> Autoridade em ar comprimido </h1>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><a href="" class="destaque">
+            <div class="img-container mb-3"><img
+                src="https://static.wixstatic.com/media/5fad49_d51e4281ce1e4622ae40eabb35552a4f~mv2.png/v1/fill/w_220,h_209,al_c,q_85,usm_0.66_1.00_0.01/Compressor%20home.webp"
+                class="img-fluid" alt=""></div>
+            <h2 class="text-uppercase">Compressoras & secadoras</h2>
+            <p class="mb-0">Alta produtividade e maior eficiência para seu negócio. Garantia de qualidade, performance e
+              robustez</p>
+          </a></div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><a href="" class="destaque">
+            <div class="img-container mb-3"><img
+                src="https://businessshowcase.netlify.app/static/media/destaque2.931ad001.svg" class="img-fluid" alt="">
             </div>
-            <div class="glide__arrows" data-glide-el="controls">
-                <script> /** @todo Utilizar ícones do font-awesome e remover essa tag de script */ </script>
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-              </div>
-      
-            
-          </div>
-      
-        </div>
-    <!-- Sidebar filters -->
-    <div class="content-inline">
-        
-
-
-      
-      <!-- colocar numa aside -->
-      <aside class="filters">
-
-      </aside>
-        
-
-        </div>
-
-        <div id="servicos" class="block">
-          <div class="container">
-            <h2 class="title text-center">Nossos Serviços</h2>
-            <h4 class="subtitle text-center mb-4">Et sumi kapa namur aondeai rocus pocus</h4>
-            <div class="row">
-              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><a href="" class="destaque">
-                  <div class="img-container mb-3"><img src="https://businessshowcase.netlify.app/static/media/destaque1.69fd2c65.svg" class="img-fluid" alt=""></div>
-                  <h5 class="text-uppercase">Et sumi kapo</h5>
-                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-                </a></div>
-              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><a href="" class="destaque">
-                  <div class="img-container mb-3"><img src="https://businessshowcase.netlify.app/static/media/destaque2.931ad001.svg" class="img-fluid" alt=""></div>
-                  <h5 class="text-uppercase">Et sumi kapo</h5>
-                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-                </a></div>
-              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><a href="" class="destaque">
-                  <div class="img-container mb-3"><img src="https://businessshowcase.netlify.app/static/media/destaque3.1f503b10.svg" class="img-fluid" alt=""></div>
-                  <h5>Et sumi kapo</h5>
-                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-                </a></div>
-              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><a href="" class="destaque">
-                  <div class="img-container mb-3"><img src="https://businessshowcase.netlify.app/static/media/destaque4.35bed641.svg" class="img-fluid" alt=""></div>
-                  <h5>Et sumi kapo</h5>
-                  <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-                </a></div>
+            <h5 class="text-uppercase">Et sumi kapo</h5>
+            <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+          </a></div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"><a href="" class="destaque">
+            <div class="img-container mb-3"><img
+                src="https://businessshowcase.netlify.app/static/media/destaque3.1f503b10.svg" class="img-fluid" alt="">
             </div>
-          </div>
-        </div>
-        
-        
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
+            <h5>Et sumi kapo</h5>
+            <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+          </a></div>
+      </div>
+    </div>
+  </section>
+  </main>
 
 
 
-        
-      </main>
-     
-
-      
-      <div id="clientes" class="block">
-        <div class="container">
+  <div id="clientes" class="block">
+    <div class="container">
+      <div class="row" style="justify-content: space-evenly; margin-top: 50px;">
+        <div class="col-md-6 align-self-center">
           <div class="row">
-            <div class="col-md-6 align-self-center">
-              <div class="row">
-                <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a></div>
-                <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a></div>
-                <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a></div>
-                <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a></div>
-                <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a></div>
-                <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a></div>
-                <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a></div>
-                <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a></div>
-                <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a></div>
-              </div>
+            <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img
+                  src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a>
             </div>
-            <div class="col-md-6 align-self-center">
-              <div class="cliente-texto ml-5">
-                <div class="imagem"><img src="https://businessshowcase.netlify.app/static/media/clientes-img.b3b28610.svg">
-                  <div class="d-inline-block pl-md-0 pl-3"><span>10</span>Anos de Experiência</div>
-                </div>
-                <div class="telefone"><img src="https://businessshowcase.netlify.app/static/media/phone.68b20368.svg" class="img-fluid">
-                  <div class="d-inline-block pl-3"><span>(11) 99999 6699</span>Atendimento de segunda a sexta, das 7h as 18h</div>
-                </div>
+            <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img
+                  src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a>
+            </div>
+            <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img
+                  src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a>
+            </div>
+            <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img
+                  src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a>
+            </div>
+            <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img
+                  src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a>
+            </div>
+            <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img
+                  src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a>
+            </div>
+            <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img
+                  src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a>
+            </div>
+            <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img
+                  src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a>
+            </div>
+            <div class="col-sm-4 col-6 mb-4"><a href="#" class="link-cliente"><img
+                  src="https://businessshowcase.netlify.app/static/media/logo1.ca77911a.svg" class="img-fluid"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <div class="cliente-texto ml-5">
+            <div class="imagem"><img src="https://businessshowcase.netlify.app/static/media/clientes-img.b3b28610.svg">
+              <div class="d-inline-block pl-md-0 pl-3"><span>10</span>Anos de Experiência</div>
+            </div>
+            <div class="telefone"><img src="https://businessshowcase.netlify.app/static/media/phone.68b20368.svg"
+                class="img-fluid">
+              <div class="d-inline-block pl-3"><span>(11) 99999 6699</span>Atendimento de segunda a sexta, das 7h as 18h
               </div>
             </div>
           </div>
         </div>
       </div>
-  </body>
-</html>
+    </div>
+  </div>
+</body>
 
+</html>

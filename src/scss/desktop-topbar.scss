@@ -78,7 +78,7 @@ body {
 
             &:hover {
               background: darken(rgba(88, 130, 250, 0.68), 49%);
-              // backdrop-filter: blur(4px);
+              // backdrop-fil blur(4px);
             }
           }
 
@@ -372,6 +372,7 @@ label {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-left: calc(var(--bs-gutter-x)/-2);
   margin-right: calc(var(--bs-gutter-x)/-2);
@@ -382,7 +383,7 @@ label {
 
 .container,
 .container-sm {
-  max-width: 540px;
+  margin: auto;
 }
 
 .container,
@@ -405,6 +406,10 @@ label {
 
 
 .row>* {
+  width: auto !important;
+  max-width: 400px !important;
+  height: auto;
+  max-height: 465px;
   flex-shrink: 0;
   margin-top: var(--bs-gutter-y);
   max-width: 100%;
@@ -416,6 +421,7 @@ label {
 
 //Design
 #servicos a.destaque {
+  line-height: 1.5rem;
   background: #f0f0f0;
   border-radius: 5px;
   color: #000;
@@ -451,6 +457,13 @@ label {
   margin-bottom: 1rem !important;
 }
 
+.col-lg-3 {
+  margin: 20px;
+}
+
+#clientes {
+  margin-top: 150px;
+}
 
 #clientes a.link-cliente {
   align-items: center;
@@ -520,4 +533,10 @@ label {
   display: block;
   font-size: 25px;
   font-weight: 900;
+}
+
+.text-center {
+  text-align: center;
+  align-self: center;
+  vertical-align: middle;
 }
