@@ -11,6 +11,7 @@
         rel="preload" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
     <style>
+      
       /** @todo Coloque um spinner aqui, veja: https://github.com/wh1t3h47/teste-desenvolvimento-web/blob/main/packages/frontend/src/index.html */
       /** Procure o SVG de um ícone de refresh do fontawesome, esse svg
        * precisa ser uma tag <svg>, não pode ser um <i>, pois precisamos que
@@ -68,147 +69,78 @@
       </span>
     </header>
 
-    <!-- Sidebar filters -->
-    <div class="content-inline">
-      <!-- colocar numa aside -->
-      <aside class="filters">
-        <section style="margin-top: 20px;" id="filtro">
-          <span class="">
-           
-            <h2 class="titulofiltro">Filtrar por</h2>
-            <div class="bordafiltro"></div>
-            <ul>
-              <li style="padding: 20px 0;"> 
-                <button class="botaofiltro">
-                  <span>Coleção</span>
-                  <span><svg viewBox="0 0 16 16" fill="currentColor" width="16" height="16"><path fill="currentColor" d="M12.159 7.2h-8.319c-0.442 0-0.48 0.358-0.48 0.8s0.038 0.8 0.48 0.8h8.319c0.442 0 0.481-0.358 0.481-0.8s-0.038-0.8-0.481-0.8z"></path></svg></span>
-                </button>
-              </li>
+   <section class="carrinho">
+    
+    <main class="main-carrinho">
+     
+      <a title="Scanner para Diagnósticos/Motor/Transmissão A/T Abs Airbag + 4 Funções Especiais - 100132" href="https://www.lojadomecanico.com.br/produto/100132/3/49/scanner-para-diagnosticosmotortransmissao-at-abs-airbag--4-funcoes-especiais-planatc-by-launch-masterscani">
+        <img style="width:89.38px; margin-left:11px; margin-top: 8px;"  src="https://img.lojadomecanico.com.br/256/3/49/100132/1600687230150.JPG" alt="" title="Scanner para Diagnósticos/Motor/Transmissão A/T Abs Airbag + 4 Funções Especiais" onerror="this.onerror=null;this.src='https://img.lojadomecanico.com.br/IMAGENS/ilustrativa.gif?ims=500x500'">   
+    </a>
 
-              <div class="textofiltro">
-                <ul>
-                  <li>
-                    <label for="">
-                      <input type="radio">
-                      Todas
-                    </label>
-                  </li>
-                  
-                  <li>
-                    <label for="">
-                      <input type="radio">
-                      Compressor Odontológico PB 240
-                    </label>
-                  </li>
-                  
-                  <li>
-                    <label for="">
-                      <input type="radio">
-                      Atlas copco
-                    </label>
-                  </li>
-                  
-                  <li>
-                    <label for="">
-                      <input type="radio">
-                      Motomil CMO-8/50BR ODONTOLÓGICO
-                    </label>
-                  </li>
-                  
-                </ul>
-              </div>
-              <li>
-                <div class="bordafiltro"></div>
-                <button style="margin-top: 14px;" class="botaofiltro">
-
-                    <span>Preço</span>
-                    <span><svg viewBox="0 0 16 16" fill="currentColor" width="16" height="16"><path fill="currentColor" d="M12.159 7.2h-8.319c-0.442 0-0.48 0.358-0.48 0.8s0.038 0.8 0.48 0.8h8.319c0.442 0 0.481-0.358 0.481-0.8s-0.038-0.8-0.481-0.8z"></path></svg></span>
-
-                
-                </button>
-                <div>
-                  <input class="ok" type="number" min="1" max="10">
-                  <span>11</span>
-                  <span>121</span>
-                </div>
-                <div class="bordafiltro"></div>
-                <div>
-                  <!-- <button style="margin-top: 12px;" class="limparfitros botaofiltro">
-                    Limpar filtros
-                   
-                  </button> -->
-                  <select class="form-control" id="nivel">
-                    <option value="Selecionar por">Selecionar por</option>
-                    <option value="normal">Normal</option>
-                    <option value="dificil">Difícil</option>
-                    <option value="chucknorris">Chuck Norris</option>
-                  </select>
-
-                  
-                </div>
-              </li>
-            </ul>
-          </span>
-        </section>
-      </aside>
-      <main class="products">
-        <div class="product-card">
+      
+      <div class="carrinho-text">
+        <p  class="strong600 " style="font-size: 14px;">Scanner para Diagnósticos/Motor/Transmissão A/T Abs....</p>
+          <small class="acima-vendido">PLANATC BY LAUNCH-MASTERSCAN/I</small>
           
-          <div id="testeimg" class="produto1">
-            <img src="images/content/produto1.png" alt=""> 
+          <p class="vendido">Vendido e entregue por <span class="carrinho-span">LojaDoMecanico</span></p>
+         
+          <!-- <div class="" style="padding: 0px 15px 10px 0;">
+            <hr style="margin-top: 5px; margin-bottom: 0px; border: none; border-top: 1px solid #eeeeee;">
+          </div> -->
+        </div>
+       
+
+        <div class="preco">
+          <div class="preco-text">
+            <div class="quantity">
+              <input type="number" min="1" max="9" step="1" value="1">
+            </div>
+            
+            <p>R$ 2.199,90 ou<br>
+              R$ 2.444,33 a prazo</p>
           </div>
           
-         <div class="text-produtos">
-           <h2>Compressor Odontológico PB200/35
-          </h2>
-          
-          <span class="price product-price">
-            <span class="price product-price-vista" style="margin-right: 3px">R$</span>181<span class="price-cent">,76</span>
-        </span>
-          
-        
-        
-        <span class="price-card-cred">  
-          <i class="fa fa-credit-card" style="margin-top:4px ">
-          </i> 
-        <span class="cartaovezes">5x R$ 40,39 no cartão</span></span>
-         </div>
-        
-         <a href="">
-          <div id="carrinho" class="button">
-            Teste
- 
+          <div class="valor">
+            <p>valor unitário à vista R$ 2.199,90 ou R$ 2.444,33 a prazo
+            </p>
           </div>
-         </a>
-
-
         </div>
-        
+    </main>
+    
+    
+    <aside class="aside-produtos">
+      <!-- <div class="produto-checkout2"></div> -->
+      <section class="produto-checkout">
+       <div>
+        <div>
+          <i class="fa fa-cubes" style="font-size: large !important; color: gray;"></i>
+                                                      Produto (1)
+          <i class="fa fa-truck" style="font-size: large !important; color: gray;"></i> Frete
+      </div>
 
+      <div>
+          <strong>R$ 2.199,90</strong>
+ou<br><strong>R$
+2.444,33</strong>
+a prazo
+<p>nao calculado</p>
+      </div>
+      
+      
+      
+      
+      <div></div>
+       </div>
+      </section>
+         
+    </aside>
+    
+   
+   
+  </section>           
 
-
-
-        
-        
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-        <div class="product-card">
-        </div>
-      </main>
-    </div>
-
-
-
+   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>
 
