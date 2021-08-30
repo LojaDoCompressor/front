@@ -144,7 +144,7 @@ span.price.product-price {
 
 
 .button {
-  background-color: $-persian-orange;/* Green */
+  background-color: $-persian-orange;
   border-radius: 24px;
   color: $-preto;
   display: inline-block;
@@ -153,11 +153,11 @@ span.price.product-price {
   margin-top: 6px;
   padding: 10px 104px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: none;/* Green */
 }
 
 #testeimg img:hover {
-    /**
+  /**
      * @todo remover id, colocar uma classe products-card-image e aninhar
      * a propriedade SCSS dentro do hover do products-card, de forma que
      * ao fazer hover em qqr lugar do card, você aumente a imagem, pois

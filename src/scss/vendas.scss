@@ -24,141 +24,141 @@
 //     justify-content: space-between;
 // }
 
-.nav-global{
-    // border: 1px solid red;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 60px 0;
-    display: flex;  
-    flex-wrap: wrap; 
+.nav-global {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  // border: 1px solid red;
+  max-width: 960px;
+  padding: 60px 0; 
 }
 
-.arquivos-container{
-    flex: 2 1 300px;
-    margin: 0 10px;
+.arquivos-container {
+  flex: 2 1 300px;
+  margin: 0 10px;
 }
 
-.img-arquivos{
-    border: 1px solid red;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 60px 0;
-    display: flex;  
-    flex-wrap: wrap; 
+.img-arquivos {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 60px 0; 
 }
 
-.h1class{
-    flex: 1 1 160px;
-    margin: 0 10px;
+.h1class {
+  flex: 1 1 160px;
+  margin: 0 10px;
 }
 
 /*Sobre*/
 
 .sobre {
-	// border-top: 2px solid #2c70ff;
-	border-bottom: 2px solid #2c70ff;
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 60px 0;
-	display: flex;
-	flex-wrap: wrap;
+  // border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 60px 0;
 }
 
 .sobre-info {
-	flex: 2 1 300px;
-	margin: 0 10px;
+  flex: 2 1 300px;
+  margin: 0 10px;
 }
 
 .sobre-info h1 {
-	// font-size: 3em;
-	// margin-bottom: .5em;
-    font: normal normal normal 26px/1.4em "open sans",sans-serif;
-    color: #575757;
-    line-height: 1.2em;
-    font-size: 24px;
+  color: #575757;
+  // font-size: 3em;
+  // margin-bottom: .5em;
+  font: normal normal normal 26px/1.4em 'open sans',sans-serif;
+  font-size: 24px;
+  line-height: 1.2em;
 }
 
 .sobre-info p {
-    font: normal normal normal 16px/1.4em "open sans",sans-serif;
-    color: black;
+  color: black;
+  font: normal normal normal 16px/1.4em 'open sans',sans-serif;
 }
 
 .sobre-img {
-	flex: 1 1 160px;
-	margin: 0 10px;
+  flex: 1 1 160px;
+  margin: 0 10px;
 }
 
-.sobre .span-price{
-    color: #575757;
-    font: normal normal normal 20px/normal "open sans",sans-serif;
+.sobre .span-price {
+  color: #575757;
+  font: normal normal normal 20px/normal 'open sans',sans-serif;
      
 }
 
-.sobre .span-juros{
-    color: #575757;
-    font: normal normal normal 14px/normal "open sans",sans-serif;
-    margin-top: 25px;
+.sobre .span-juros {
+  color: #575757;
+  font: normal normal normal 14px/normal 'open sans',sans-serif;
+  margin-top: 25px;
 }
 
-.sobre .label-space{
-    margin-top: 25px;
+.sobre .label-space {
+  margin-top: 25px;
 }
 
-.sobre .button-vendas{
-    background-color: #e08e45;
-    border-radius: 24px;
-    color: #000;
-    display: inline-block;
-    font-size: 16px;
-    margin-left: -6px;
-    margin-top: 37px;
-    padding: 12px 66px;
-    text-align: center;
-    text-decoration: none;
+.sobre .button-vendas {
+  background-color: #e08e45;
+  border-radius: 24px;
+  color: #000;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: -6px;
+  margin-top: 37px;
+  padding: 12px 66px;
+  text-align: center;
+  text-decoration: none;
 
 }
 
 
 .menu {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 15px 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-    font: normal normal normal 16px/1.4em "open sans",sans-serif;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font: normal normal normal 16px/1.4em 'open sans',sans-serif;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 15px 0;
 }
 
 .menu a {
-	color:black;
+  color: black;
 }
 
 .menu-logo a {
-	font-size: 16px;
-	// margin: 0 10px;
-    text-decoration: none;
+  font-size: 16px;
+  // margin: 0 10px;
+  text-decoration: none;
 }
 
 .menu-nav ul {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-nav a {
-	font-size: 16px;
-	// display: block;
-	// padding: 10px;
-    text-decoration: none;
+  font-size: 16px;
+  // display: block;
+  // padding: 10px;
+  text-decoration: none;
 }
 
-.menu-nav a:hover{
-	color: #122ab2;
-    text-decoration: none;
+.menu-nav a:hover {
+  color: #122ab2;
+  text-decoration: none;
 }
 
 .WtQOd {
-    margin-left: 10px;
+  margin-left: 10px;
     
 }
 
@@ -171,78 +171,77 @@
 //     transform: translateY(2px);
 // }
 
-svg{
-    transform: rotate(
-0deg
-) translateY(2px);
+svg {
+  transform: rotate(0deg) translateY(2px);
 
 }
 
 
-.caracts{
-    padding-top: 24px;
+.caracts {
+  padding-top: 24px;
 }
 
-.caracts-div-text{
-    text-align: left;
+.caracts-div-text {
+  text-align: left;
 }
 
-.info-baixo{
-    width: auto;
-    height: auto;
-    margin-bottom: 40px;
-    padding: 20px 0;
-    font: normal normal normal 16px/1.4em "open sans",sans-serif;
-    color: #000000;
+.info-baixo {
+  color: #000;
+  font: normal normal normal 16px/1.4em 'open sans',sans-serif;
+  height: auto;
+  margin-bottom: 40px;
+  padding: 20px 0;
+  width: auto;
 }
 
-.div-caract{
-    padding-top: 24px;
+.div-caract {
+  padding-top: 24px;
     
 }
 
 
 
 ._2UIKs {
-    flex-grow: 1;
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.6em;
+  flex-grow: 1;
+  font-size: 15px;
+  line-height: 1.6em;
+  margin: 0;
 }
 
 
 ._2K_N3 {
-    display: flex;
-    padding: 0;
-    position: relative;
-    text-align: inherit;
-    width: 85%;
-    text-decoration: inherit;
-    cursor: pointer;
-    border: 0;
-    background: transparent;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  position: relative;
+  text-align: inherit;
+  text-decoration: inherit;
+  width: 85%;
 }
 
 .s8gg2 {
-    font: normal normal normal 16px/1.4em "open sans",sans-serif;
-    color: #000000;
+  color: #000;
+  font: normal normal normal 16px/1.4em 'open sans',sans-serif;
 }
 
 
 
 .menu-vendas {
-	max-width: 960px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+  padding-top: 10px;
 }
 
-.menu-vendas p, .menu-nav a{
-	margin: 0 10px 10px 10px;
+.menu-vendas p,
+.menu-nav a {
+  margin: 0 10px 10px;
 }
 
 .menu-vendas a {
-	color: black;
+  color: black;
 }

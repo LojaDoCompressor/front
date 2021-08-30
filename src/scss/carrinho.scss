@@ -1,0 +1,233 @@
+@import './better-media-queries.scss';
+
+body {
+  background: #eee;
+}
+
+.carrinho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 75px;
+  @include media('screen', '<bp1Width') {
+    flex-direction: column !important;
+  }
+
+  .main-carrinho {
+    background-color: white;
+
+    border-radius: 5px;
+    //   width: 60%;
+    //   //Remover
+    //   background-color: red;
+    //   height: 300px !important;
+    display: flex;
+    flex-direction: row;
+    height: 111px !important;
+    // width: max-content;
+    width: 849.33px;
+  }
+
+  .aside-produtos {
+    //Remover
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    height: 300px !important;
+    width: 25%;
+
+    .produto-checkout {
+      background-color: #fafafa;
+      border-radius: 5px;
+      height: 248px;
+      padding: 15px 10px 10px;
+      // width: 100%;
+      // height: 50px;
+      // background-color: blue;
+      // border-radius: 5px;
+      width: 409px;
+    }
+
+    .produto-checkout2 {
+      background-color: pink;
+      border-radius: 5px;
+      height: 93px;
+      width: 95%;
+    }
+
+
+		
+
+  }
+
+  .seletor-preco {
+    width: 50px;
+  }
+
+
+  .preco-text {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .valor {
+    display: grid;
+    place-items: center;
+  }
+
+  .preco {
+    display: flex;
+    flex-direction: column;
+  }
+   
+}
+
+.vendido {
+  color: #333;
+  font-family: 'Open Sans';
+  font-size: 13px;
+}
+
+.acima-vendido {
+  color: black;
+  font-family: 'Open Sans';
+}
+
+.strong600 {
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+.font-black {
+  color: #000;
+}
+
+.input-preco {
+  width: 49px;
+}
+
+.div-input {
+  align-self: center;
+}
+
+
+
+
+.quantity {
+  align-self: center;
+  flex-item-align: center;
+  margin-left: 18px;
+  margin-top: 21px;
+  position: relative;
+}
+  
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+  
+input[type=number] {
+  appearance: textfield;
+}
+  
+  
+.quantity input {
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 8%);
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 8%);
+  display: block;
+  float: left;
+  font-size: 1rem;
+  height: 32px;
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  width: 99.16px;
+}
+  
+.quantity input:focus {
+  outline: 0;
+}
+  
+.quantity-nav {
+  float: left;
+  height: 42px;
+  position: relative;
+}
+  
+.quantity-button {
+  background: #fafafa;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  color: #333;
+  cursor: pointer;
+  font-family: 'FontAwesome' !important;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  transform: translateX(-100%);
+  transform: translateX(-100%);
+  user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
+  width: 21px;
+}
+  
+.quantity-button:active {
+  background: #eaeaea;
+}
+  
+.quantity-button.quantity-up {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0 4px 0 0;
+  font-family: 'FontAwesome';
+  height: 50%;
+  line-height: 1.6;
+  position: absolute;
+  top: 0;
+}
+  
+.quantity-button.quantity-down {
+  border-radius: 0 0 4px;
+  bottom: 0;
+  font-family: 'FontAwesome';
+  height: 50%;
+  position: absolute;
+}
+
+.preco p {
+  font-family: 'Open Sans';
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: 31px;
+  margin-top: 25px;
+  padding-right: 0;
+	
+}
+  
+.carrinho-text p {
+  margin: 0 !important;
+}
+
+
+.carrinho-text {
+  align-self: center;
+  margin-left: 13px;
+}
+
+.carrinho-text .vendido {
+  margin-top: 5px !important;
+	  
+}
+
+
+.carrinho-span {
+  font-weight: 600;
+}
