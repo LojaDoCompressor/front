@@ -2,6 +2,7 @@
 @import './colors.scss';
 @import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
 @import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
+@import './better-media-queries.scss';
 
 body {
   background-color: $-ghost-white;
@@ -19,7 +20,9 @@ body {
   top: 0;
   width: 100%;
 
+  // @todo remover do html e css
   .navbarButtons {
+    display: none !important;
     align-items: center;
     display: flex;
     flex-shrink: 0;
@@ -177,6 +180,17 @@ body {
     flex-grow: 1;
 
     .logo {
+      @include media('screen', '<minWidth') {
+        height: $mobile-search-height;
+        width: $mobile-search-width;
+      }
+
+      // retina
+      @include media('retina', '<minWidth') {
+        height: $mobile-search-height * $retina;
+        width: $mobile-search-width * $retina;
+      }
+
       height: 73px;
       margin: 10px 12px 0 36px;
       width: 106px;
@@ -190,6 +204,7 @@ body {
       max-width: $desktop-search-width;
       transition: all ease-in-out 300ms;
       width: 100%;
+
 
       &:hover {
         & > input {
