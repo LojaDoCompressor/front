@@ -1,3 +1,6 @@
+@import './better-media-queries.scss';
+
+
 // .nav-inicio{
 //     flex: 1 1 0;
 // }
@@ -244,4 +247,17 @@ svg {
 
 .menu-vendas a {
   color: black;
+  
 }
+
+.img-vendas{
+  width: 500px; 
+  height: 500px; 
+  border: 1px solid #dadada;
+  @include media('screen', '<bp1Width') {
+    width: 180px;
+    height: 180px;
+  }
+
+}
+
