@@ -2,6 +2,7 @@
 @import './colors.scss';
 @import 'node_modules/@glidejs/glide/src/assets/sass/glide.core';
 @import 'node_modules/@glidejs/glide/src/assets/sass/glide.theme';
+@import './better-media-queries.scss';
 
 body {
   background-color: $-ghost-white;
@@ -19,7 +20,9 @@ body {
   top: 0;
   width: 100%;
 
+  // @todo remover do html e css
   .navbarButtons {
+    display: none !important;
     align-items: center;
     display: flex;
     flex-shrink: 0;
@@ -78,7 +81,7 @@ body {
 
             &:hover {
               background: darken(rgba(88, 130, 250, 0.68), 49%);
-              // backdrop-filter: blur(4px);
+              // backdrop-fil blur(4px);
             }
           }
 
@@ -177,6 +180,17 @@ body {
     flex-grow: 1;
 
     .logo {
+      @include media('screen', '<minWidth') {
+        height: $mobile-search-height;
+        width: $mobile-search-width;
+      }
+
+      // retina
+      @include media('retina', '<minWidth') {
+        height: $mobile-search-height * $retina;
+        width: $mobile-search-width * $retina;
+      }
+
       height: 73px;
       margin: 10px 12px 0 36px;
       width: 106px;
@@ -190,6 +204,7 @@ body {
       max-width: $desktop-search-width;
       transition: all ease-in-out 300ms;
       width: 100%;
+
 
       &:hover {
         & > input {
@@ -372,6 +387,7 @@ label {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin-left: calc(var(--bs-gutter-x)/-2);
   margin-right: calc(var(--bs-gutter-x)/-2);
@@ -382,7 +398,7 @@ label {
 
 .container,
 .container-sm {
-  max-width: 540px;
+  margin: auto;
 }
 
 .container,
@@ -405,6 +421,10 @@ label {
 
 
 .row>* {
+  width: auto !important;
+  max-width: 400px !important;
+  height: auto;
+  max-height: 465px;
   flex-shrink: 0;
   margin-top: var(--bs-gutter-y);
   max-width: 100%;
@@ -416,6 +436,7 @@ label {
 
 //Design
 #servicos a.destaque {
+  line-height: 1.5rem;
   background: #f0f0f0;
   border-radius: 5px;
   color: #000;
@@ -451,6 +472,13 @@ label {
   margin-bottom: 1rem !important;
 }
 
+.col-lg-3 {
+  margin: 20px;
+}
+
+#clientes {
+  margin-top: 150px;
+}
 
 #clientes a.link-cliente {
   align-items: center;
@@ -520,4 +548,10 @@ label {
   display: block;
   font-size: 25px;
   font-weight: 900;
+}
+
+.text-center {
+  text-align: center;
+  align-self: center;
+  vertical-align: middle;
 }

@@ -9,6 +9,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 75px;
+
   @include media('screen', '<bp1Width') {
     flex-direction: column !important;
   }
