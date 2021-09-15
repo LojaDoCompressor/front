@@ -139,8 +139,12 @@
 
 .menu-logo a {
   font-size: 16px;
-  // margin: 0 10px;
+
   text-decoration: none;
+  @include media('screen', '<bp1Width') {
+   font-size: 11px ;
+  }
+
 }
 
 .menu-nav ul {
@@ -255,9 +259,20 @@ svg {
   height: 500px; 
   border: 1px solid #dadada;
   @include media('screen', '<bp1Width') {
-    width: 180px;
-    height: 180px;
+    width: 288px;
+    height: 266px;
   }
 
 }
 
+.logo{
+  @include media('screen', '<bp1Width') {
+   display: none;
+  }
+}
+
+header{
+  @include media('screen', '<bp1Width') {
+    display: none;
+   }
+}

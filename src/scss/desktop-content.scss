@@ -2,6 +2,7 @@
 @import './colors.scss';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './better-media-queries.scss';
 
 
 /**
@@ -46,11 +47,31 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  @include media('screen', '<minWidth') {
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+@include media('retina', '<minWidth') {
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
   &>.filters {
     background-color: $-ghost-white;
     height: auto;
     width: $desktop-filters-width;
+
+    
+    @include media('screen', '<minWidth') {
+      width: 100%;
+  }
+  
+  @include media('retina', '<minWidth') {
+      width: calc(retina * 100%);
+  }     
   }
 
   &>.products {
@@ -73,7 +94,10 @@
     // grid-auto-rows: 150px;
     row-gap: $desktop-product-card-row-gap;
     width: $desktop-products-width;
-
+    @include media('screen', '<minWidth') {
+     width: 100%;
+     padding: 0;
+  }
     &>.product-card {
       background-color: $-ghost-white;
       height: $desktop-product-card-height;
@@ -170,3 +194,12 @@ span.price.product-price {
 
 
 
+header{
+  display: none;
+}
+
+.logo{
+  @include media('screen', '<bp1Width') {
+   display: none;
+  }
+}

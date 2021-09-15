@@ -204,7 +204,10 @@ body {
       max-width: $desktop-search-width;
       transition: all ease-in-out 300ms;
       width: 100%;
-
+      @include media('screen', '<bp1Width') {
+       max-width: 280px;
+       margin-left: 6px;
+       }
 
       &:hover {
         & > input {
