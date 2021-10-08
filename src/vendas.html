@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="preload" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
+        
+        
     <style>
       /** @todo Coloque um spinner aqui, veja: https://github.com/wh1t3h47/teste-desenvolvimento-web/blob/main/packages/frontend/src/index.html */
       /** Procure o SVG de um ícone de refresh do fontawesome, esse svg
@@ -23,7 +25,26 @@
 
   </head>
   <body>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <nav  class="nav ">
+      <a href="#" class="nav__link">
+        <i class="material-icons nav__icon">phone</i>
+        <span class="nav__text">Telefone</span>
+      </a>
+      <a href="#" class="nav__link nav__link--active">
+        <i class="material-icons nav__icon">shopping_cart</i>
+        <span class="nav__text">Carrinho</span>
+      </a>
+      <a href="#" class="nav__link">
+        <i class="material-icons nav__icon">person</i>
+        <span class="nav__text">Minha conta</span>
+      </a>
+      <a href="#" class="nav__link">
+        <i class="material-icons nav__icon">chat_bubble</i>
+        <span class="nav__text">Chat</span>
+      </a>
+      
+    </nav>
     <!-- top Navbar with span children, it has a logo, a search box and three icons -->
     <div class="navbar">
       <span class="logoAndSearch">
@@ -56,17 +77,52 @@
     </div>
 
     <!-- header with a list of links inline -->
-    <header>
-      <span class="links">
-        <a href="#" disabled=""><small>INÍCIO</small></a>
-        <a href="#"><small>COMPRESSORES</small></a>
-        <a href="#"><small>HIDRO LAVADORAS</small></a>
-        <a href="#"><small>SECADORAS</small></a>
-        <a href="#"><small>FERRAMENTAS PNEUMÁTICAS</small></a>
-        <a href="#"><small>FILTROS E ÓLEOS</small></a>
-        <a href="#"><small>PEÇAS ORIGINAIS</small></a>
-      </span>
-    </header>
+    <header class="header" id="header">
+      <nav class="nav container">
+          
+
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item">
+                      <a href="#home" class="nav__link active-link">
+                          <i class='bx bx-home-alt nav__icon'></i>
+                          <span class="nav__name">Home</span>
+                      </a>
+                  </li>
+                  
+                  <li class="nav__item">
+                      <a href="#about" class="nav__link">
+                          <i class='bx bx-user nav__icon'></i>
+                          <span class="nav__name">About</span>
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#skills" class="nav__link">
+                          <i class='bx bx-book-alt nav__icon'></i>
+                          <span class="nav__name">Skills</span>
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#portfolio" class="nav__link">
+                          <i class='bx bx-briefcase-alt nav__icon'></i>
+                          <span class="nav__name">Portfolio</span>
+                      </a>
+                  </li>
+
+                  <li class="nav__item">
+                      <a href="#contactme" class="nav__link">
+                          <i class='bx bx-message-square-detail nav__icon'></i>
+                          <span class="nav__name">Contactme</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+
+          <img src="assets/img/perfil.png" alt="" class="nav__img">
+      </nav>
+  </header>
 
 
     <nav data-hook="navigation" class="menu">
