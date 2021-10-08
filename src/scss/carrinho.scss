@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 300px !important;
-    width: 25%;
+    // width: 25%;
 
     .produto-checkout {
       background-color: #fafafa;
@@ -384,4 +384,8 @@ input[type=number] {
   margin-top: 20px;
   width: 353px;
   height: 46px;
+}
+
+header{
+  display: none;
 }
