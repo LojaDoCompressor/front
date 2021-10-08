@@ -18,26 +18,31 @@
   min-width: $desktop-links-min-width;
   padding: $desktop-links-padding-top $desktop-links-padding-left $desktop-links-padding-bottom $desktop-links-padding-right;
   text-align: center;
+    color: #000;
+    letter-spacing: 0.05em;
+    font-family: raleway-semibold,raleway,sans-serif;
+    font-size: 14px;
+    font-weight: 700;
 
   &>a {
-    color: $all-link-color;
+    color: black;
     flex-grow: 1;
     flex-shrink: 0;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
     &[disabled] {
-      color: $desktop-active-links-color !important;
+      color: #FF7200 !important;
       cursor: default;
       font-weight: bold;
     }
 
     &:visited {
-      color: $all-link-visited-color;
+      color: black;
     }
 
     &:hover {
-      color: $all-link-hover-color;
+      color:#FF7200;
     }
   }
 }
@@ -195,7 +200,7 @@ span.price.product-price {
 
 
 header{
-  display: none;
+  // display: none;
 }
 
 .logo{
